@@ -7,11 +7,6 @@ spring:
   config:
     activate:
       on-profile: default
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: ${JWK_URI}
 
 management:
   endpoint:
@@ -37,4 +32,3 @@ spring:
           enabled: true
           property-source-enabled: true
 
-JWK_URI: ${SSO-PROVIDER-JWK-URI}
